@@ -1,9 +1,6 @@
-//const Block = require ('./Block.js');
-//const block = new Block('foo','bar','zoo','baz');
-//console.log (block.toString());
-//
 
-const blockFactory = require('./blockDC.js');
+
+const blockFactory = require('./block.js');
 let spec = {} ;
 spec.timeStamp = 'foo';
 spec.lastHash = 'bar';
