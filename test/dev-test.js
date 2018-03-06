@@ -1,6 +1,6 @@
 
 
-const blockFactory = require('./block.js');
+const blockFactory = require('../lib/block.js');
 let spec = {} ;
 spec.timeStamp = 'foo';
 spec.lastHash = 'bar';
