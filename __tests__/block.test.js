@@ -1,4 +1,4 @@
-const Block = require('../lib/block.js');
+const Block = require('../ans/block.js');
 
 describe('Block Class data and methods',() =>{
   let block;
