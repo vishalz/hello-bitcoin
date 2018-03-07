@@ -1,4 +1,4 @@
-const Block = require ('../lib/block-ud.js');
+const Block = require ('../lib/block.js');
 describe('The Block',() =>{
   let data,lastBlock,block; 
   beforeEach(() => {
