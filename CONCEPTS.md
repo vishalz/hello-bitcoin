@@ -6,15 +6,15 @@
 1. JavaScript does not need or have any way to create a Class
 1. ECMA is a organization that develops JavaScript spec. Their goal is to make every developer in the world use JavaScript to write code.
 1. ECMA very desparately wanted to get Java developers to use JavaScript
-1. ECMA is convinced that Java developers are lazy and will not spend the time to learn functional programming concepts.
+1. ECMA was convinced that Java developers are lazy and will not spend the time to learn functional programming concepts.
 1. They hatched an evil scheme and introduced a keyword "class" in ES6 to lure Java developers.  
 1. ES6 class keyword is syntatic sugar that fakes a Java developer into thinking that he is creating objects using Java type class and thus prevents 
 1. You can create a JavaScript object using a fake class  in JavaScript 
-  1. Step 1 Declare the class using class keyword. Make sure that first letter of the class is CAPITALIZED
-  1. Step 2 Add a constructor method to the class
-  1. Step 3 Declare and initialize properties of the object in the constructor using "this" keyword
-  1. Step 4 Add other methods  the class
-  1. Step 5 Instantiate (fancy word for Create) an Object from the class using "new" keyword
+    1. Step 1 Declare the class using class keyword. Make sure that first letter of the class is CAPITALIZED
+    1. Step 2 Add a constructor method to the class
+    1. Step 3 Declare and initialize properties of the object in the constructor using "this" keyword
+    1. Step 4 Add other methods  the class
+    1. Step 5 Instantiate (fancy word for Create) an Object from the class using "new" keyword
 ```
 class Student{                         // Step 2 Declare fake class Notice the capital S
 
