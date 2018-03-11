@@ -1,4 +1,4 @@
-## Objects , Classes and this 
+##  JavaScript Fake Class 
 1. A class in a Object Oriented Language (such as Java) is a template used to create Objects
 1. Objects in Java can not be created without declaring a class 
 1. This is because Java is a strongly typed language and all variables (including objects) have to have a type 
@@ -16,7 +16,7 @@
     1. Step 4 Add other methods  the class
     1. Step 5 Instantiate (fancy word for Create) an Object from the class using "new" keyword
 ```
-class Student{                         // Step 2 Declare fake class Notice the capital S
+class Student{                         // Step 2 Declare fake class Notice the capital S in Student
 
 constructor(name,grade){               // Step 2 Constructor
 
@@ -50,3 +50,68 @@ ryan.teacher = "Mrs Griffin";          // All variables of the fake class  are p
 console.log (ryan.teacher)             // Prints Mrs Griffin
 
 ```
+
+## Static Methods 
+
+1. The static keyword defines a static method for a class. 
+1. Static methods are called without instantiating their class and cannot be called through a class instance. 
+1. Static methods are often used to create utility functions for an application
+
+```
+class MyClass{
+
+constructor(grade, room, teacher){
+this.grade   = grade;
+this.room    = room;
+this.teacher = teacher;
+}
+
+
+static findRoom(grade){                   // Declare a static method
+  let rooms = {
+    '6': 'Toronto',
+    '7' : 'Tokyo' ,
+    '8' : 'Milton'
+  };
+
+  return rooms[grade];
+
+}                                         // end of findroom
+
+static findTeacher(grade){                // Declare another static method
+  let teachers = {
+    '6' : 'Mrs Smith' ,
+    '7' : 'Mrs Jones' ,
+    '8' : 'Mrs Brown'
+  };
+  return teachers[grade];
+
+}                                         // end of findTeacher
+
+toString(){                               // Declare a regular method
+  return ` Class -
+    Grade   = ${this.grade}
+    Room    = ${this.room}
+    Teacher = ${this.teacher}
+  `;
+}                                         // end of toString method
+
+}                                         // end of class Class MyClass
+
+let room = MyClass.findRoom('6');         // Call a static method of class MyClass.
+console.log (room)                        // Prints Toronto
+
+let teacher = MyClass.findTeacher('6');   // Call a static method of class MyClass
+console.log (teacher);                    // Prints Mrs Smith
+
+let grade6 = new MyClass(8,room,teacher); //Instantiate a object of type MyClass
+console.log (grade6.room);                //Prints Toronto
+console.log (grade6.toString());
+
+console.log (grade6.findTeacher('6'));    //Static methods can't be called on objects returns TypeError
+
+
+```
+
+
+

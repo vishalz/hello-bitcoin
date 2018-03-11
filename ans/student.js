@@ -18,6 +18,11 @@ setEmail(email){
   this.email             = email;
 }
 
+static generateEmail(){       // Declare a Static method
+
+}
+
+
 
 }                                      // end of class Student
 

@@ -1,3 +1,4 @@
+*.swp
 logs/
 config/
 node_modules/
